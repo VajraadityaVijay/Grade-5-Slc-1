@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/calculator.js"></script>
+        <title>Slc - Vajraaditya, Maghimma</title>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="heading">Slc</div>
+            <div class="title">Student Led Conference</div>
+            <img src="/Blob-1.svg" class="image" alt="Hey, check you internet!">
+            <div class="description">Math and ICT</div>
+        </div>
+        <div class="steps">
+            <div class="heading">Multiplication</div>
+            <div class="description-1">Steps to do multiplication on paper:</div>
+            <ul class="bullets-1">
+                <li class="bullet">First, write the larger number above the smaller number.</li>
+                <li class="bullet">Next, multiply the ones and then the tens and so on.</li>
+                <li class="bullet">Finally, check your answers using a calculator.</li>
+            </ul>
+            <img src="/Multiplication.svg" alt="Hey, check you internet!" class="image">
+            <div class="description-2">Steps to do long multiplication on paper:</div>
+            <ul class="bullets-2">
+                <li class="bullet">First, write the larger number above the smaller number.</li>
+                <li class="bullet">Next, multiply the number in the ones place of the bottom number by the number in the ones place of the 
+                    top number, then the tens place of the top number, and so on.</li>
+                <li class="bullet">Then, draw a 0 in the ones column below the first product and multiply the number 
+                    in the tens place of the bottom number by the number in ones place of the 
+                    top number, then the tens place of the top number, and so on.</li>
+                <li class="bullet">Next, Add the digits of both products.</li>
+                <li class="bullet">First, write the larger number above the smaller number.</li>
+            </ul>
+        </div>
+        <div class="quiz">
+            <div class="heading">Quiz</div>
+            <ul class="questions">
+                <li class="question">16 x 8 = </li>
+                <li class="question">279 x 3 = </li>
+                <li class="question">52 x 19 = </li>
+                <li class="question">436 x 27 = </li>
+            </ul>
+            <img src="/Quiz-Image.svg" alt="Hey, check you internet" class="image">
+        </div>
+        <div class="calculator">
+            <div class="display-back">
+               <input type="text" id="result" class="display" placeholder="0"/>
+            </div>
+            <div class="row-1">
+               <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')"/>
+               <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')"/>
+               <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')"/>
+               <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')"/>
+            </div>
+            <div class="row-2">
+               <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')"/>
+               <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')"/>
+               <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')"/>
+               <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')"/>
+            </div>
+            <div class="row-3">
+               <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')"/>
+               <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')"/>
+               <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')"/>
+               <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')"/>
+            </div>
+            <div class="row-4">
+               <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()"/>
+               <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')"/>
+               <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()"/>
+               <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')"/>
+            </div>
+         </div>
+         <div class="footer">
+            <div class="heading">Slc</div>
+            <div class="title">Student Led Conference</div>
+            <div class="description">Math and ICT</div>
+            <div class="made-by">Made by : S.O.Maghimma & Vajraaditya Vijay - 5C</div>
+            <img src="/Calculator-Image.svg" alt="Hey, check you internet!" class="image">
+         </div>
+        <div class="background"></div>
+    </body>
+</html>
