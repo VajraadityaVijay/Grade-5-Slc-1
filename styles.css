@@ -1,6 +1,5 @@
 body {
   position: relative;
-  height: 2500px;
   padding: 0%;
   margin: 0%;
   background-color: #1E1E1E;
@@ -280,8 +279,8 @@ body .footer {
   position: absolute;
   width: 95vw;
   height: 378px;
-  left: 29px;
-  top: 2133px;
+  left: 30px;
+  top: 2433px;
   background: #42424F;
   border-radius: 0px 0px 25px 25px;
 }
@@ -330,7 +329,7 @@ body .footer .made-by {
   width: 502px;
   height: 27px;
   left: 129px;
-  top: 43vh;
+  top: 38vh;
   font-family: "Print Clearly";
   font-style: normal;
   font-weight: 400;
