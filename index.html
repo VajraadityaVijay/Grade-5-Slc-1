@@ -8,6 +8,7 @@
         <style>
             body {
                 position: relative;
+                height: 2835px;
                 padding: 0%;
                 margin: 0%;
                 background-color: #1E1E1E;
@@ -16,7 +17,7 @@
             body .background {
                 position: absolute;
                 width: 95vw;
-                height: 2482px;
+                height: 2775px;
                 left: 1.8vw;
                 top: 4.5vh;
                 z-index: -9999;
@@ -320,7 +321,8 @@
                 width: 95vw;
                 height: 378px;
                 left: 30px;
-                top: 2633px;
+                top: 2433px;
+                margin-bottom: 4.5vh;
                 background: #42424F;
                 border-radius: 0px 0px 25px 25px;
             }
@@ -391,29 +393,7 @@
             }
 
         </style>
-        <script>
-            //function that display value
-            function dis(val)
-            {
-                document.getElementById("result").value+=val
-                document.getElementById("result").focus();
-            }
-
-            //function that evaluates the digit and return result
-            function solve()
-            {
-                let x = document.getElementById("result").value
-                let y = eval(x)
-                document.getElementById("result").value = y
-                document.getElementById("result").focus();
-            }
-
-            //function that clear the display
-            function clr()
-            {
-                document.getElementById("result").value = ""
-            }
-        </script>
+        <script src="/calculator.js"></script>
         <title>Slc - Vajraaditya, Maghimma</title>
     </head>
 
@@ -421,7 +401,7 @@
         <div class="hero">
             <div class="heading">Slc</div>
             <div class="title">Student Led Conference</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg" class="image" alt="Hey, check you internet!">
+            <img src="/Blob-1.svg" class="image" alt="Hey, check you internet!">
             <div class="description">Math and ICT</div>
         </div>
         <div class="steps">
@@ -432,7 +412,7 @@
                 <li class="bullet">Next, multiply the ones and then the tens and so on.</li>
                 <li class="bullet">Finally, check your answers using a calculator.</li>
             </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Multiplication.svg" alt="Hey, check you internet!" class="image">
+            <img src="/Multiplication.svg" alt="Hey, check you internet!" class="image">
             <div class="description-2">Steps to do long multiplication on paper:</div>
             <ul class="bullets-2">
                 <li class="bullet">First, write the larger number above the smaller number.</li>
@@ -454,7 +434,7 @@
                 <li class="question">52 x 19 = </li>
                 <li class="question">436 x 27 = </li>
             </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg" alt="Hey, check you internet" class="image">
+            <img src="/Quiz-Image.svg" alt="Hey, check you internet" class="image">
         </div>
         <div class="calculator">
             <div class="display-back">
@@ -490,7 +470,7 @@
             <div class="title">Student Led Conference</div>
             <div class="description">Math and ICT</div>
             <div class="made-by">Made by : S.O.Maghimma & Vajraaditya Vijay - 5C</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Calculator-Image.svg" alt="Hey, check you internet!" class="image">
+            <img src="/Calculator-Image.svg" alt="Hey, check you internet!" class="image">
         </div>
         <div class="background"></div>
     </body>
