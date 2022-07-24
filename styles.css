@@ -1,0 +1,347 @@
+body {
+  position: relative;
+  height: 2500px;
+  padding: 0%;
+  margin: 0%;
+  background-color: #1E1E1E;
+}
+body .background {
+  position: absolute;
+  width: 95vw;
+  height: 2482px;
+  left: 1.8vw;
+  top: 4.5vh;
+  z-index: -9999;
+  background-color: rgba(139, 131, 225, 0.2);
+  opacity: 0.5;
+  border-radius: 25px;
+}
+body .hero {
+  position: absolute;
+}
+body .hero .heading {
+  position: absolute;
+  width: 96px;
+  height: 32px;
+  left: 7vw;
+  top: 10vh;
+  font-family: "Autumn Chant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .hero .title {
+  position: absolute;
+  width: 50vw;
+  height: 266px;
+  left: 4vw;
+  top: 20vw;
+  z-index: 20;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 133px;
+  letter-spacing: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+body .hero .image {
+  position: absolute;
+  width: 40vw;
+  height: 507px;
+  left: 50vw;
+  top: 20vh;
+}
+body .hero .description {
+  position: absolute;
+  width: 157px;
+  height: 32px;
+  left: 76px;
+  top: 37vw;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .steps {
+  position: absolute;
+}
+body .steps .heading {
+  position: absolute;
+  width: 308px;
+  height: 43px;
+  left: 10vw;
+  top: 110vh;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 10px;
+  color: #FFFFFF;
+}
+body .steps .description-1 {
+  position: absolute;
+  width: 420px;
+  height: 32px;
+  left: 10vw;
+  top: 122vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .steps .bullets-1 {
+  position: absolute;
+  width: 627px;
+  height: 120px;
+  left: 9vw;
+  top: 134vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+body .steps .bullets-1 .bullet {
+  margin-bottom: 4vh;
+}
+body .steps .image {
+  position: absolute;
+  width: 329px;
+  height: 295px;
+  left: 65vw;
+  top: 122vh;
+}
+body .steps .description-2 {
+  position: absolute;
+  width: 480px;
+  height: 32px;
+  left: 10vw;
+  top: 164vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .steps .bullets-2 {
+  position: absolute;
+  width: 627px;
+  height: 120px;
+  left: 9vw;
+  top: 176vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+body .steps .bullets-2 .bullet {
+  margin-bottom: 4vh;
+}
+body .quiz {
+  position: absolute;
+}
+body .quiz .heading {
+  position: absolute;
+  width: 93px;
+  height: 43px;
+  left: 10vw;
+  top: 240vh;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 10px;
+  color: #FFFFFF;
+}
+body .quiz .questions {
+  position: absolute;
+  width: 627px;
+  height: 189px;
+  left: 9vw;
+  top: 252vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+body .quiz .questions .question {
+  margin-bottom: 4vh;
+}
+body .quiz .image {
+  position: absolute;
+  width: 339px;
+  height: 337px;
+  left: 30vw;
+  top: 238vh;
+}
+body .calculator {
+  position: absolute;
+  width: 314px;
+  height: 472px;
+  left: 65vw;
+  top: 225vh;
+  background: linear-gradient(180deg, #201F2D 0%, #0F0F15 100%);
+  box-shadow: 0px 52.4px 104.8px rgba(5, 5, 7, 0.646), inset 0px -29.8098px 29.8098px #0C0C12, inset 0px 29.8098px 29.8098px #222231;
+  border-radius: 25px;
+}
+body .calculator .display-back {
+  position: absolute;
+  width: 263px;
+  height: 100px;
+  left: 25px;
+  top: 31px;
+  background: rgba(211, 208, 239, 0.85);
+  border-radius: 13px;
+}
+body .calculator .display {
+  position: absolute;
+  width: 255px;
+  height: 100px;
+  font-family: "Print Dashed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: right;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
+}
+body .calculator .display::-webkit-outer-spin-button,
+body .calculator .display::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body .calculator .display:focus {
+  outline: none;
+}
+body .calculator .row-1 {
+  position: absolute;
+  width: 253px;
+  height: 64px;
+  top: 152px;
+}
+body .calculator .row-2 {
+  position: absolute;
+  width: 253px;
+  height: 64px;
+  top: 232px;
+}
+body .calculator .row-3 {
+  position: absolute;
+  width: 253px;
+  height: 64px;
+  top: 311px;
+}
+body .calculator .row-4 {
+  position: absolute;
+  width: 253px;
+  height: 64px;
+  top: 387px;
+}
+body .calculator .btn {
+  position: absolute;
+  width: 49px;
+  height: 53px;
+  background: rgba(228, 203, 248, 0.85);
+  border-radius: 13px;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+body .calculator .btn-ac {
+  position: absolute;
+  width: 49px;
+  height: 53px;
+  background: rgba(255, 100, 100, 0.85);
+  border-radius: 13px;
+}
+body .footer {
+  position: absolute;
+  width: 95vw;
+  height: 378px;
+  left: 29px;
+  top: 2133px;
+  background: #42424F;
+  border-radius: 0px 0px 25px 25px;
+}
+body .footer .heading {
+  position: absolute;
+  width: 96px;
+  height: 32px;
+  left: 129px;
+  top: 8vh;
+  font-family: "Autumn Chant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .footer .title {
+  position: absolute;
+  width: 540px;
+  height: 32px;
+  left: 129px;
+  top: 18vh;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+body .footer .description {
+  position: absolute;
+  width: 74px;
+  height: 15px;
+  left: 129px;
+  top: 23vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+body .footer .made-by {
+  position: absolute;
+  width: 502px;
+  height: 27px;
+  left: 129px;
+  top: 43vh;
+  font-family: "Print Clearly";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+body .footer .image {
+  position: absolute;
+  width: 375.83px;
+  height: 327.9px;
+  left: 67vw;
+  top: 4vh;
+}
