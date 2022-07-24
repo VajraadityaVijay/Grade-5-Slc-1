@@ -1,18 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/styles.css">
-        <script src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/calculator.js"></script>
+        <style>
+            body {
+                position: relative;
+                padding: 0%;
+                margin: 0%;
+                background-color: #1E1E1E;
+            }
+
+            body .background {
+                position: absolute;
+                width: 95vw;
+                height: 2482px;
+                left: 1.8vw;
+                top: 4.5vh;
+                z-index: -9999;
+                background-color: rgba(139, 131, 225, 0.2);
+                opacity: 0.5;
+                border-radius: 25px;
+            }
+
+            body .hero {
+                position: absolute;
+            }
+
+            body .hero .heading {
+                position: absolute;
+                width: 96px;
+                height: 32px;
+                left: 7vw;
+                top: 10vh;
+                font-family: "Autumn Chant";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                color: #FFFFFF;
+            }
+
+            body .hero .title {
+                position: absolute;
+                width: 50vw;
+                height: 266px;
+                left: 4vw;
+                top: 20vw;
+                z-index: 20;
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 100px;
+                line-height: 133px;
+                letter-spacing: 20px;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            body .hero .image {
+                position: absolute;
+                width: 40vw;
+                height: 507px;
+                left: 50vw;
+                top: 20vh;
+            }
+
+            body .hero .description {
+                position: absolute;
+                width: 157px;
+                height: 32px;
+                left: 76px;
+                top: 37vw;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                color: #FFFFFF;
+            }
+
+            body .steps {
+                position: absolute;
+            }
+
+            body .steps .heading {
+                position: absolute;
+                width: 308px;
+                height: 43px;
+                left: 10vw;
+                top: 110vh;
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 43px;
+                letter-spacing: 10px;
+                color: #FFFFFF;
+            }
+
+            body .steps .description-1 {
+                position: absolute;
+                width: 420px;
+                height: 32px;
+                left: 10vw;
+                top: 122vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                color: #FFFFFF;
+            }
+
+            body .steps .bullets-1 {
+                position: absolute;
+                width: 627px;
+                height: 120px;
+                left: 9vw;
+                top: 134vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            body .steps .bullets-1 .bullet {
+                margin-bottom: 4vh;
+            }
+
+            body .steps .image {
+                position: absolute;
+                width: 329px;
+                height: 295px;
+                left: 65vw;
+                top: 122vh;
+            }
+
+            body .steps .description-2 {
+                position: absolute;
+                width: 480px;
+                height: 32px;
+                left: 10vw;
+                top: 164vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                color: #FFFFFF;
+            }
+
+            body .steps .bullets-2 {
+                position: absolute;
+                width: 627px;
+                height: 120px;
+                left: 9vw;
+                top: 176vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            body .steps .bullets-2 .bullet {
+                margin-bottom: 4vh;
+            }
+
+            body .quiz {
+                position: absolute;
+            }
+
+            body .quiz .heading {
+                position: absolute;
+                width: 93px;
+                height: 43px;
+                left: 10vw;
+                top: 240vh;
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 43px;
+                letter-spacing: 10px;
+                color: #FFFFFF;
+            }
+
+            body .quiz .questions {
+                position: absolute;
+                width: 627px;
+                height: 189px;
+                left: 9vw;
+                top: 252vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 27px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+
+            body .quiz .questions .question {
+                margin-bottom: 4vh;
+            }
+
+            body .quiz .image {
+                position: absolute;
+                width: 339px;
+                height: 337px;
+                left: 30vw;
+                top: 238vh;
+            }
+
+            body .calculator {
+                position: absolute;
+                width: 314px;
+                height: 472px;
+                left: 65vw;
+                top: 225vh;
+                background: linear-gradient(180deg, #201F2D 0%, #0F0F15 100%);
+                box-shadow: 0px 52.4px 104.8px rgba(5, 5, 7, 0.646), inset 0px -29.8098px 29.8098px #0C0C12, inset 0px 29.8098px 29.8098px #222231;
+                border-radius: 25px;
+            }
+
+            body .calculator .display-back {
+                position: absolute;
+                width: 263px;
+                height: 100px;
+                left: 25px;
+                top: 31px;
+                background: rgba(211, 208, 239, 0.85);
+                border-radius: 13px;
+            }
+
+            body .calculator .display {
+                position: absolute;
+                width: 255px;
+                height: 100px;
+                font-family: "Print Dashed";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 96px;
+                line-height: 96px;
+                text-align: right;
+                background: transparent;
+                outline: none;
+                border: none;
+                color: transparent;
+                text-shadow: 0 0 0 #000000;
+            }
+
+            body .calculator .display::-webkit-outer-spin-button,
+            body .calculator .display::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            body .calculator .display:focus {
+                outline: none;
+            }
+
+            body .calculator .row-1 {
+                position: absolute;
+                width: 253px;
+                height: 64px;
+                top: 152px;
+            }
+
+            body .calculator .row-2 {
+                position: absolute;
+                width: 253px;
+                height: 64px;
+                top: 232px;
+            }
+
+            body .calculator .row-3 {
+                position: absolute;
+                width: 253px;
+                height: 64px;
+                top: 311px;
+            }
+
+            body .calculator .row-4 {
+                position: absolute;
+                width: 253px;
+                height: 64px;
+                top: 387px;
+            }
+
+            body .calculator .btn {
+                position: absolute;
+                width: 49px;
+                height: 53px;
+                background: rgba(228, 203, 248, 0.85);
+                border-radius: 13px;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 40px;
+                color: #FFFFFF;
+            }
+
+            body .calculator .btn-ac {
+                position: absolute;
+                width: 49px;
+                height: 53px;
+                background: rgba(255, 100, 100, 0.85);
+                border-radius: 13px;
+            }
+
+            body .footer {
+                position: absolute;
+                width: 95vw;
+                height: 378px;
+                left: 30px;
+                top: 2433px;
+                background: #42424F;
+                border-radius: 0px 0px 25px 25px;
+            }
+
+            body .footer .heading {
+                position: absolute;
+                width: 96px;
+                height: 32px;
+                left: 129px;
+                top: 8vh;
+                font-family: "Autumn Chant";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                color: #FFFFFF;
+            }
+
+            body .footer .title {
+                position: absolute;
+                width: 540px;
+                height: 32px;
+                left: 129px;
+                top: 18vh;
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 12px;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            body .footer .description {
+                position: absolute;
+                width: 74px;
+                height: 15px;
+                left: 129px;
+                top: 23vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 15px;
+                color: #FFFFFF;
+            }
+
+            body .footer .made-by {
+                position: absolute;
+                width: 502px;
+                height: 27px;
+                left: 129px;
+                top: 38vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 27px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+
+            body .footer .image {
+                position: absolute;
+                width: 375.83px;
+                height: 327.9px;
+                left: 67vw;
+                top: 4vh;
+            }
+
+        </style>
+        <script src="/calculator.js"></script>
         <title>Slc - Vajraaditya, Maghimma</title>
     </head>
+
     <body>
         <div class="hero">
             <div class="heading">Slc</div>
             <div class="title">Student Led Conference</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg" class="image" alt="Hey, check you internet!">
+            <img src="/Blob-1.svg" class="image" alt="Hey, check you internet!">
             <div class="description">Math and ICT</div>
         </div>
         <div class="steps">
@@ -23,14 +410,15 @@
                 <li class="bullet">Next, multiply the ones and then the tens and so on.</li>
                 <li class="bullet">Finally, check your answers using a calculator.</li>
             </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Multiplication.svg" alt="Hey, check you internet!" class="image">
+            <img src="/Multiplication.svg" alt="Hey, check you internet!" class="image">
             <div class="description-2">Steps to do long multiplication on paper:</div>
             <ul class="bullets-2">
                 <li class="bullet">First, write the larger number above the smaller number.</li>
-                <li class="bullet">Next, multiply the number in the ones place of the bottom number by the number in the ones place of the 
+                <li class="bullet">Next, multiply the number in the ones place of the bottom number by the number in the
+                    ones place of the
                     top number, then the tens place of the top number, and so on.</li>
-                <li class="bullet">Then, draw a 0 in the ones column below the first product and multiply the number 
-                    in the tens place of the bottom number by the number in ones place of the 
+                <li class="bullet">Then, draw a 0 in the ones column below the first product and multiply the number
+                    in the tens place of the bottom number by the number in ones place of the
                     top number, then the tens place of the top number, and so on.</li>
                 <li class="bullet">Next, Add the digits of both products.</li>
                 <li class="bullet">First, write the larger number above the smaller number.</li>
@@ -44,44 +432,45 @@
                 <li class="question">52 x 19 = </li>
                 <li class="question">436 x 27 = </li>
             </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg" alt="Hey, check you internet" class="image">
+            <img src="/Quiz-Image.svg" alt="Hey, check you internet" class="image">
         </div>
         <div class="calculator">
             <div class="display-back">
-               <input type="text" id="result" class="display" placeholder="0"/>
+                <input type="text" id="result" class="display" placeholder="0" />
             </div>
             <div class="row-1">
-               <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')"/>
-               <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')"/>
-               <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')"/>
-               <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')"/>
+                <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')" />
+                <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')" />
+                <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')" />
+                <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')" />
             </div>
             <div class="row-2">
-               <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')"/>
-               <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')"/>
-               <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')"/>
-               <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')"/>
+                <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')" />
+                <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')" />
+                <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')" />
+                <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')" />
             </div>
             <div class="row-3">
-               <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')"/>
-               <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')"/>
-               <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')"/>
-               <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')"/>
+                <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')" />
+                <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')" />
+                <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')" />
+                <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')" />
             </div>
             <div class="row-4">
-               <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()"/>
-               <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')"/>
-               <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()"/>
-               <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')"/>
+                <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()" />
+                <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')" />
+                <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()" />
+                <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')" />
             </div>
-         </div>
-         <div class="footer">
+        </div>
+        <div class="footer">
             <div class="heading">Slc</div>
             <div class="title">Student Led Conference</div>
             <div class="description">Math and ICT</div>
             <div class="made-by">Made by : S.O.Maghimma & Vajraaditya Vijay - 5C</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Calculator-Image.svg" alt="Hey, check you internet!" class="image">
-         </div>
+            <img src="/Calculator-Image.svg" alt="Hey, check you internet!" class="image">
+        </div>
         <div class="background"></div>
     </body>
+
 </html>
