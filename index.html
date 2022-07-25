@@ -5,7 +5,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//db.onlinewebfonts.com/c/205dd63f2dafd117c7b63696569514c6?family=Autumn+Chant" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/06b103d23cb2b5cebfb7a9ca55e10c72?family=Playfair+Display" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/6daec8bf4221bea170c85fdfe62bc50a?family=Print+Clearly" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/7ba5dae339ed73d217ace2d122971944?family=Print+Dashed" rel="stylesheet" type="text/css"/>
         <style>
+            @import url(//db.onlinewebfonts.com/c/205dd63f2dafd117c7b63696569514c6?family=Autumn+Chant);
+            @font-face {font-family: "Autumn Chant"; src: url("//db.onlinewebfonts.com/t/205dd63f2dafd117c7b63696569514c6.ttf") format("truetype"); }
+            @import url(//db.onlinewebfonts.com/c/06b103d23cb2b5cebfb7a9ca55e10c72?family=Playfair+Display);
+            @font-face {font-family: "Playfair Display"; src: url("//db.onlinewebfonts.com/t/06b103d23cb2b5cebfb7a9ca55e10c72.ttf") format("truetype"); }
+            @import url(//db.onlinewebfonts.com/c/6daec8bf4221bea170c85fdfe62bc50a?family=Print+Clearly);
+            @font-face {font-family: "Print Clearly"; src: url("//db.onlinewebfonts.com/t/6daec8bf4221bea170c85fdfe62bc50a.ttf") format("truetype"); }
+            @import url(//db.onlinewebfonts.com/c/7ba5dae339ed73d217ace2d122971944?family=Print+Dashed);
+            @font-face {font-family: "Print Dashed"; src: url("//db.onlinewebfonts.com/t/7ba5dae339ed73d217ace2d122971944.ttf") format("truetype"); }
             body {
                 position: relative;
                 height: 2835px;
@@ -15,11 +27,10 @@
             }
 
             body .background {
-                position: absolute;
                 width: 95vw;
                 height: 2775px;
-                left: 1.8vw;
-                top: 4.5vh;
+                margin: auto;
+                margin-top: 4.5vh;
                 z-index: -9999;
                 background-color: rgba(139, 131, 225, 0.2);
                 opacity: 0.5;
@@ -46,16 +57,16 @@
 
             body .hero .title {
                 position: absolute;
-                width: 50vw;
+                width: 90vw;
                 height: 266px;
                 left: 4vw;
-                top: 20vw;
+                top: calc(48vh - 133px);
                 z-index: 20;
                 font-family: "Playfair Display";
                 font-style: normal;
                 font-weight: 900;
-                font-size: 100px;
-                line-height: 133px;
+                font-size: 6.36vw;
+                line-height: 18vh;
                 letter-spacing: 20px;
                 color: rgba(255, 255, 255, 0.9);
             }
@@ -72,8 +83,8 @@
                 position: absolute;
                 width: 157px;
                 height: 32px;
-                left: 76px;
-                top: 37vw;
+                left: 4.5vw;
+                top: calc(72vh - 18px);
                 font-family: "Print Clearly";
                 font-style: normal;
                 font-weight: 400;
@@ -320,8 +331,8 @@
                 position: absolute;
                 width: 95vw;
                 height: 378px;
-                left: 30px;
-                top: 2433px;
+                left: 2.5vw;
+                top: 323.7vh;
                 margin-bottom: 4.5vh;
                 background: #42424F;
                 border-radius: 0px 0px 25px 25px;
@@ -331,7 +342,7 @@
                 position: absolute;
                 width: 96px;
                 height: 32px;
-                left: 129px;
+                left: 6vw;
                 top: 8vh;
                 font-family: "Autumn Chant";
                 font-style: normal;
@@ -345,7 +356,7 @@
                 position: absolute;
                 width: 540px;
                 height: 32px;
-                left: 129px;
+                left: 6vw;
                 top: 18vh;
                 font-family: "Playfair Display";
                 font-style: normal;
@@ -360,7 +371,7 @@
                 position: absolute;
                 width: 74px;
                 height: 15px;
-                left: 129px;
+                left: 6vw;
                 top: 23vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -374,7 +385,7 @@
                 position: absolute;
                 width: 502px;
                 height: 27px;
-                left: 129px;
+                left: 6vw;
                 top: 38vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -388,22 +399,20 @@
                 position: absolute;
                 width: 375.83px;
                 height: 327.9px;
-                left: 67vw;
+                right: 5vw;
                 top: 4vh;
             }
 
         </style>
         <script>
             //function that display value
-            function dis(val)
-            {
-                document.getElementById("result").value+=val
+            function dis(val) {
+                document.getElementById("result").value += val
                 document.getElementById("result").focus();
             }
 
             //function that evaluates the digit and return result
-            function solve()
-            {
+            function solve() {
                 let x = document.getElementById("result").value
                 let y = eval(x)
                 document.getElementById("result").value = y
@@ -411,10 +420,10 @@
             }
 
             //function that clear the display
-            function clr()
-            {
+            function clr() {
                 document.getElementById("result").value = ""
             }
+
         </script>
         <title>Slc - Vajraaditya, Maghimma</title>
     </head>
@@ -423,7 +432,8 @@
         <div class="hero">
             <div class="heading">Slc</div>
             <div class="title">Student Led Conference</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg" class="image" alt="Hey, check you internet!">
+            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg" class="image"
+                alt="Hey, check you internet!">
             <div class="description">Math and ICT</div>
         </div>
         <div class="steps">
@@ -434,7 +444,8 @@
                 <li class="bullet">Next, multiply the ones and then the tens and so on.</li>
                 <li class="bullet">Finally, check your answers using a calculator.</li>
             </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Multiplication.svg" alt="Hey, check you internet!" class="image">
+            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Multiplication.svg"
+                alt="Hey, check you internet!" class="image">
             <div class="description-2">Steps to do long multiplication on paper:</div>
             <ul class="bullets-2">
                 <li class="bullet">First, write the larger number above the smaller number.</li>
@@ -456,7 +467,8 @@
                 <li class="question">52 x 19 = </li>
                 <li class="question">436 x 27 = </li>
             </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg" alt="Hey, check you internet" class="image">
+            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg"
+                alt="Hey, check you internet" class="image">
         </div>
         <div class="calculator">
             <div class="display-back">
@@ -492,7 +504,8 @@
             <div class="title">Student Led Conference</div>
             <div class="description">Math and ICT</div>
             <div class="made-by">Made by : S.O.Maghimma & Vajraaditya Vijay - 5C</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Calculator-Image.svg" alt="Hey, check you internet!" class="image">
+            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Calculator-Image.svg"
+                alt="Hey, check you internet!" class="image">
         </div>
         <div class="background"></div>
     </body>
