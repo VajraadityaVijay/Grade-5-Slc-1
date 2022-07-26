@@ -466,17 +466,6 @@
                 top: 348vh;
             }
 
-            .calculator-2 {
-                position: absolute;
-                width: 314px;
-                height: 472px;
-                left: 63vw;
-                top: 340vh;
-                background: linear-gradient(180deg, #201F2D 0%, #0F0F15 100%);
-                box-shadow: 0px 52.4px 104.8px rgba(5, 5, 7, 0.646), inset 0px -29.8098px 29.8098px #0C0C12, inset 0px 29.8098px 29.8098px #222231;
-                border-radius: 25px;
-            }
-
             .footer {
                 position: absolute;
                 width: 95vw;
@@ -575,14 +564,16 @@
         </script>
         <title>Slc - Vajraaditya, Maghimma</title>
     </head>
+
     <body>
         <div class="background">
             <div class="hero">
                 <div class="heading">Slc</div>
                 <div class="title">Student Led Conference</div>
                 <div class="description">Math and ICT</div>
-                <p class="welcome">Welcome to the 1st <p class="welcome-slc">Student Led Conference</p></p>
-                
+                <p class="welcome">Welcome to the 1st <p class="welcome-slc">Student Led Conference</p>
+                </p>
+
                 <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg"
                     class="image" alt="Hey, check you internet!">
             </div>
@@ -650,6 +641,28 @@
                     <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')" />
                 </div>
             </div>
+            <script>
+                stickyDiv = document.querySelector(".calculator");
+                stickyPos = stickyDiv.getBoundingClientRect().top + window.pageYOffset;
+                window.onscroll = function () {
+                    if (window.pageYOffset > stickyPos - 160) {
+                        stickyDiv.style.position = "fixed";
+                        stickyDiv.style.top = "20vh";
+                    } else {
+                        stickyDiv.style.position = "absolute";
+                        stickyDiv.style.top = "225vh";
+                    } 
+                    
+                    if (window.pageYOffset >= 2450) {
+                        stickyDiv.style.position = "absolute";
+                        stickyDiv.style.top = "340vh";
+                    }
+                }
+
+                function pos() {
+                    console.log(window.pageYOffset);
+                }
+            </script>
             <div class="steps-2">
                 <div class="heading">Break-apart Method</div>
                 <ul class="bullets">
@@ -671,35 +684,6 @@
                 <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg"
                     alt="Hey, check you internet" class="image">
             </div>
-            <div class="calculator-2">
-                <div class="display-back">
-                    <input type="text" id="result" class="display" placeholder="0" />
-                </div>
-                <div class="row-1">
-                    <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')" />
-                    <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')" />
-                    <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')" />
-                    <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')" />
-                </div>
-                <div class="row-2">
-                    <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')" />
-                    <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')" />
-                    <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')" />
-                    <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')" />
-                </div>
-                <div class="row-3">
-                    <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')" />
-                    <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')" />
-                    <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')" />
-                    <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')" />
-                </div>
-                <div class="row-4">
-                    <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()" />
-                    <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')" />
-                    <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()" />
-                    <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')" />
-                </div>
-            </div>
             <div class="steps-2">
                 <div class="heading">Break-apart Method</div>
                 <ul class="bullets">
@@ -718,4 +702,5 @@
             </div>
         </div>
     </body>
+
 </html>
