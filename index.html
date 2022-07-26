@@ -5,19 +5,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="//db.onlinewebfonts.com/c/205dd63f2dafd117c7b63696569514c6?family=Autumn+Chant" rel="stylesheet" type="text/css"/>
-        <link href="//db.onlinewebfonts.com/c/06b103d23cb2b5cebfb7a9ca55e10c72?family=Playfair+Display" rel="stylesheet" type="text/css"/>
-        <link href="//db.onlinewebfonts.com/c/6daec8bf4221bea170c85fdfe62bc50a?family=Print+Clearly" rel="stylesheet" type="text/css"/>
-        <link href="//db.onlinewebfonts.com/c/7ba5dae339ed73d217ace2d122971944?family=Print+Dashed" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="//db.onlinewebfonts.com/c/205dd63f2dafd117c7b63696569514c6?family=Autumn+Chant" rel="stylesheet"
+            type="text/css" />
+        <link href="//db.onlinewebfonts.com/c/06b103d23cb2b5cebfb7a9ca55e10c72?family=Playfair+Display" rel="stylesheet"
+            type="text/css" />
+        <link href="//db.onlinewebfonts.com/c/6daec8bf4221bea170c85fdfe62bc50a?family=Print+Clearly" rel="stylesheet"
+            type="text/css" />
+        <link href="//db.onlinewebfonts.com/c/7ba5dae339ed73d217ace2d122971944?family=Print+Dashed" rel="stylesheet"
+            type="text/css" />
         <style>
             @import url(//db.onlinewebfonts.com/c/205dd63f2dafd117c7b63696569514c6?family=Autumn+Chant);
-            @font-face {font-family: "Autumn Chant"; src: url("//db.onlinewebfonts.com/t/205dd63f2dafd117c7b63696569514c6.ttf") format("truetype"); }
+
+            @font-face {
+                font-family: "Autumn Chant";
+                src: url("//db.onlinewebfonts.com/t/205dd63f2dafd117c7b63696569514c6.ttf") format("truetype");
+            }
+
             @import url(//db.onlinewebfonts.com/c/06b103d23cb2b5cebfb7a9ca55e10c72?family=Playfair+Display);
-            @font-face {font-family: "Playfair Display"; src: url("//db.onlinewebfonts.com/t/06b103d23cb2b5cebfb7a9ca55e10c72.ttf") format("truetype"); }
+
+            @font-face {
+                font-family: "Playfair Display";
+                src: url("//db.onlinewebfonts.com/t/06b103d23cb2b5cebfb7a9ca55e10c72.ttf") format("truetype");
+            }
+
             @import url(//db.onlinewebfonts.com/c/6daec8bf4221bea170c85fdfe62bc50a?family=Print+Clearly);
-            @font-face {font-family: "Print Clearly"; src: url("//db.onlinewebfonts.com/t/6daec8bf4221bea170c85fdfe62bc50a.ttf") format("truetype"); }
+
+            @font-face {
+                font-family: "Print Clearly";
+                src: url("//db.onlinewebfonts.com/t/6daec8bf4221bea170c85fdfe62bc50a.ttf") format("truetype");
+            }
+
             @import url(//db.onlinewebfonts.com/c/7ba5dae339ed73d217ace2d122971944?family=Print+Dashed);
-            @font-face {font-family: "Print Dashed"; src: url("//db.onlinewebfonts.com/t/7ba5dae339ed73d217ace2d122971944.ttf") format("truetype"); }
+
+            @font-face {
+                font-family: "Print Dashed";
+                src: url("//db.onlinewebfonts.com/t/7ba5dae339ed73d217ace2d122971944.ttf") format("truetype");
+            }
+
             body {
                 position: relative;
                 height: 2835px;
@@ -26,26 +51,25 @@
                 background-color: #1E1E1E;
             }
 
-            body .background {
+            .background {
                 width: 95vw;
-                height: 2775px;
+                height: 460vh;
                 margin: auto;
                 margin-top: 4.5vh;
                 z-index: -9999;
-                background-color: rgba(139, 131, 225, 0.2);
-                opacity: 0.5;
+                background-color: rgba(139, 131, 225, 0.1);
                 border-radius: 25px;
             }
 
-            body .hero {
+            .hero {
                 position: absolute;
             }
 
-            body .hero .heading {
+            .hero .heading {
                 position: absolute;
                 width: 96px;
                 height: 32px;
-                left: 7vw;
+                left: 5vw;
                 top: 10vh;
                 font-family: "Autumn Chant";
                 font-style: normal;
@@ -55,13 +79,12 @@
                 color: #FFFFFF;
             }
 
-            body .hero .title {
+            .hero .title {
                 position: absolute;
                 width: 90vw;
                 height: 266px;
-                left: 4vw;
+                left: 2vw;
                 top: calc(48vh - 133px);
-                z-index: 20;
                 font-family: "Playfair Display";
                 font-style: normal;
                 font-weight: 900;
@@ -71,19 +94,20 @@
                 color: rgba(255, 255, 255, 0.9);
             }
 
-            body .hero .image {
+            .hero .image {
                 position: absolute;
                 width: 40vw;
                 height: 507px;
-                left: 50vw;
+                left: 48vw;
                 top: 20vh;
+                z-index: -2;
             }
 
-            body .hero .description {
+            .hero .description {
                 position: absolute;
                 width: 157px;
                 height: 32px;
-                left: 4.5vw;
+                left: 2.5vw;
                 top: calc(72vh - 18px);
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -93,15 +117,48 @@
                 color: #FFFFFF;
             }
 
-            body .steps {
+            .hero .welcome {
+                position: relative;
+                display: inline-block;
+                height: 43px;
+                left: 2.5vw;
+                top: calc(80vh - 21px);
+
+                font-family: 'Print Clearly';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 36px;
+
+                color: #FFFFFF;
+            }
+
+            .hero .welcome-slc {
+                position: relative;
+                display: inline-block;
+                height: 43px;
+                left: 4vw;
+                top: calc(80vh - 21px);
+
+                font-family: 'Playfair Display';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 43px;
+                letter-spacing: 10px;
+
+                color: #FFFFFF;
+            }
+
+            .steps-1 {
                 position: absolute;
             }
 
-            body .steps .heading {
+            .steps-1 .heading {
                 position: absolute;
                 width: 308px;
                 height: 43px;
-                left: 10vw;
+                left: 8vw;
                 top: 110vh;
                 font-family: "Playfair Display";
                 font-style: normal;
@@ -112,11 +169,11 @@
                 color: #FFFFFF;
             }
 
-            body .steps .description-1 {
+            .steps-1 .description-1 {
                 position: absolute;
                 width: 420px;
                 height: 32px;
-                left: 10vw;
+                left: 8vw;
                 top: 122vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -126,11 +183,11 @@
                 color: #FFFFFF;
             }
 
-            body .steps .bullets-1 {
+            .steps-1 .bullets-1 {
                 position: absolute;
                 width: 627px;
                 height: 120px;
-                left: 9vw;
+                left: 7vw;
                 top: 134vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -140,23 +197,23 @@
                 color: #FFFFFF;
             }
 
-            body .steps .bullets-1 .bullet {
+            .steps-1 .bullets-1 .bullet {
                 margin-bottom: 4vh;
             }
 
-            body .steps .image {
+            .steps-1 .image {
                 position: absolute;
                 width: 329px;
                 height: 295px;
-                left: 65vw;
+                left: 63vw;
                 top: 122vh;
             }
 
-            body .steps .description-2 {
+            .steps-1 .description-2 {
                 position: absolute;
                 width: 480px;
                 height: 32px;
-                left: 10vw;
+                left: 8vw;
                 top: 164vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -166,11 +223,11 @@
                 color: #FFFFFF;
             }
 
-            body .steps .bullets-2 {
+            .steps-1 .bullets-2 {
                 position: absolute;
                 width: 627px;
                 height: 120px;
-                left: 9vw;
+                left: 7vw;
                 top: 176vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -180,19 +237,19 @@
                 color: #FFFFFF;
             }
 
-            body .steps .bullets-2 .bullet {
+            .steps-1 .bullets-2 .bullet {
                 margin-bottom: 4vh;
             }
 
-            body .quiz {
+            .quiz-1 {
                 position: absolute;
             }
 
-            body .quiz .heading {
+            .quiz-1 .heading {
                 position: absolute;
                 width: 93px;
                 height: 43px;
-                left: 10vw;
+                left: 8vw;
                 top: 240vh;
                 font-family: "Playfair Display";
                 font-style: normal;
@@ -203,11 +260,11 @@
                 color: #FFFFFF;
             }
 
-            body .quiz .questions {
+            .quiz-1 .questions {
                 position: absolute;
                 width: 627px;
                 height: 189px;
-                left: 9vw;
+                left: 7vw;
                 top: 252vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -217,40 +274,40 @@
                 color: #FFFFFF;
             }
 
-            body .quiz .questions .question {
+            .quiz-1 .questions .question {
                 margin-bottom: 4vh;
             }
 
-            body .quiz .image {
+            .quiz-1 .image {
                 position: absolute;
                 width: 339px;
                 height: 337px;
-                left: 30vw;
+                left: 28vw;
                 top: 238vh;
             }
 
-            body .calculator {
+            .calculator {
                 position: absolute;
                 width: 314px;
                 height: 472px;
-                left: 65vw;
+                left: 63vw;
                 top: 225vh;
                 background: linear-gradient(180deg, #201F2D 0%, #0F0F15 100%);
                 box-shadow: 0px 52.4px 104.8px rgba(5, 5, 7, 0.646), inset 0px -29.8098px 29.8098px #0C0C12, inset 0px 29.8098px 29.8098px #222231;
                 border-radius: 25px;
             }
 
-            body .calculator .display-back {
+            .display-back {
                 position: absolute;
                 width: 263px;
                 height: 100px;
-                left: 25px;
+                left: 23px;
                 top: 31px;
                 background: rgba(211, 208, 239, 0.85);
                 border-radius: 13px;
             }
 
-            body .calculator .display {
+            .display {
                 position: absolute;
                 width: 255px;
                 height: 100px;
@@ -267,45 +324,45 @@
                 text-shadow: 0 0 0 #000000;
             }
 
-            body .calculator .display::-webkit-outer-spin-button,
-            body .calculator .display::-webkit-inner-spin-button {
+            .display::-webkit-outer-spin-button,
+            .display::-webkit-inner-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
             }
 
-            body .calculator .display:focus {
+            .display:focus {
                 outline: none;
             }
 
-            body .calculator .row-1 {
+            .row-1 {
                 position: absolute;
                 width: 253px;
                 height: 64px;
                 top: 152px;
             }
 
-            body .calculator .row-2 {
+            .row-2 {
                 position: absolute;
                 width: 253px;
                 height: 64px;
                 top: 232px;
             }
 
-            body .calculator .row-3 {
+            .row-3 {
                 position: absolute;
                 width: 253px;
                 height: 64px;
                 top: 311px;
             }
 
-            body .calculator .row-4 {
+            .row-4 {
                 position: absolute;
                 width: 253px;
                 height: 64px;
                 top: 387px;
             }
 
-            body .calculator .btn {
+            .btn {
                 position: absolute;
                 width: 49px;
                 height: 53px;
@@ -319,7 +376,7 @@
                 color: #FFFFFF;
             }
 
-            body .calculator .btn-ac {
+            .btn-ac {
                 position: absolute;
                 width: 49px;
                 height: 53px;
@@ -327,22 +384,113 @@
                 border-radius: 13px;
             }
 
-            body .footer {
+            .steps-2 {
+                position: absolute;
+            }
+
+            .steps-2 .heading {
+                position: absolute;
+                width: 608px;
+                height: 43px;
+                left: 8vw;
+                top: 300vh;
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 43px;
+                letter-spacing: 10px;
+                color: #FFFFFF;
+            }
+
+            .steps-2 .bullets {
+                position: absolute;
+                width: 627px;
+                height: 120px;
+                left: 7vw;
+                top: 312vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            .steps-2 .bullets .bullet {
+                margin-bottom: 4vh;
+            }
+
+            .quiz-2 {
+                position: absolute;
+            }
+
+            .quiz-2 .heading {
+                position: absolute;
+                width: 93px;
+                height: 43px;
+                left: 8vw;
+                top: 343vh;
+                font-family: "Playfair Display";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 43px;
+                letter-spacing: 10px;
+                color: #FFFFFF;
+            }
+
+            .quiz-2 .questions {
+                position: absolute;
+                width: 627px;
+                height: 189px;
+                left: 7vw;
+                top: 355vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 27px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+
+            .quiz-2 .questions .question {
+                margin-bottom: 4vh;
+            }
+
+            .quiz-2 .image {
+                position: absolute;
+                width: 339px;
+                height: 337px;
+                left: 28vw;
+                top: 348vh;
+            }
+
+            .calculator-2 {
+                position: absolute;
+                width: 314px;
+                height: 472px;
+                left: 63vw;
+                top: 340vh;
+                background: linear-gradient(180deg, #201F2D 0%, #0F0F15 100%);
+                box-shadow: 0px 52.4px 104.8px rgba(5, 5, 7, 0.646), inset 0px -29.8098px 29.8098px #0C0C12, inset 0px 29.8098px 29.8098px #222231;
+                border-radius: 25px;
+            }
+
+            .footer {
                 position: absolute;
                 width: 95vw;
                 height: 378px;
-                left: 2.5vw;
-                top: 323.7vh;
-                margin-bottom: 4.5vh;
+                top: calc(460vh - 378px);
                 background: #42424F;
                 border-radius: 0px 0px 25px 25px;
             }
 
-            body .footer .heading {
+            .footer .heading {
                 position: absolute;
                 width: 96px;
                 height: 32px;
-                left: 6vw;
+                left: 4vw;
                 top: 8vh;
                 font-family: "Autumn Chant";
                 font-style: normal;
@@ -352,11 +500,11 @@
                 color: #FFFFFF;
             }
 
-            body .footer .title {
+            .footer .title {
                 position: absolute;
                 width: 540px;
                 height: 32px;
-                left: 6vw;
+                left: 4vw;
                 top: 18vh;
                 font-family: "Playfair Display";
                 font-style: normal;
@@ -367,11 +515,11 @@
                 color: rgba(255, 255, 255, 0.9);
             }
 
-            body .footer .description {
+            .footer .description {
                 position: absolute;
                 width: 74px;
                 height: 15px;
-                left: 6vw;
+                left: 4vw;
                 top: 23vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -381,11 +529,11 @@
                 color: #FFFFFF;
             }
 
-            body .footer .made-by {
+            .footer .made-by {
                 position: absolute;
                 width: 502px;
                 height: 27px;
-                left: 6vw;
+                left: 4vw;
                 top: 38vh;
                 font-family: "Print Clearly";
                 font-style: normal;
@@ -395,7 +543,7 @@
                 color: #FFFFFF;
             }
 
-            body .footer .image {
+            .footer .image {
                 position: absolute;
                 width: 375.83px;
                 height: 327.9px;
@@ -427,87 +575,147 @@
         </script>
         <title>Slc - Vajraaditya, Maghimma</title>
     </head>
-
     <body>
-        <div class="hero">
-            <div class="heading">Slc</div>
-            <div class="title">Student Led Conference</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg" class="image"
-                alt="Hey, check you internet!">
-            <div class="description">Math and ICT</div>
-        </div>
-        <div class="steps">
-            <div class="heading">Multiplication</div>
-            <div class="description-1">Steps to do multiplication on paper:</div>
-            <ul class="bullets-1">
-                <li class="bullet">First, write the larger number above the smaller number.</li>
-                <li class="bullet">Next, multiply the ones and then the tens and so on.</li>
-                <li class="bullet">Finally, check your answers using a calculator.</li>
-            </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Multiplication.svg"
-                alt="Hey, check you internet!" class="image">
-            <div class="description-2">Steps to do long multiplication on paper:</div>
-            <ul class="bullets-2">
-                <li class="bullet">First, write the larger number above the smaller number.</li>
-                <li class="bullet">Next, multiply the number in the ones place of the bottom number by the number in the
-                    ones place of the
-                    top number, then the tens place of the top number, and so on.</li>
-                <li class="bullet">Then, draw a 0 in the ones column below the first product and multiply the number
-                    in the tens place of the bottom number by the number in ones place of the
-                    top number, then the tens place of the top number, and so on.</li>
-                <li class="bullet">Next, Add the digits of both products.</li>
-                <li class="bullet">First, write the larger number above the smaller number.</li>
-            </ul>
-        </div>
-        <div class="quiz">
-            <div class="heading">Quiz</div>
-            <ul class="questions">
-                <li class="question">16 x 8 = </li>
-                <li class="question">279 x 3 = </li>
-                <li class="question">52 x 19 = </li>
-                <li class="question">436 x 27 = </li>
-            </ul>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg"
-                alt="Hey, check you internet" class="image">
-        </div>
-        <div class="calculator">
-            <div class="display-back">
-                <input type="text" id="result" class="display" placeholder="0" />
+        <div class="background">
+            <div class="hero">
+                <div class="heading">Slc</div>
+                <div class="title">Student Led Conference</div>
+                <div class="description">Math and ICT</div>
+                <p class="welcome">Welcome to the 1st <p class="welcome-slc">Student Led Conference</p></p>
+                
+                <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Blob-1.svg"
+                    class="image" alt="Hey, check you internet!">
             </div>
-            <div class="row-1">
-                <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')" />
-                <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')" />
-                <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')" />
-                <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')" />
+            <div class="steps-1">
+                <div class="heading">Multiplication</div>
+                <div class="description-1">Steps to do multiplication on paper:</div>
+                <ul class="bullets-1">
+                    <li class="bullet">First, write the larger number above the smaller number.</li>
+                    <li class="bullet">Next, multiply the ones and then the tens and so on.</li>
+                    <li class="bullet">Finally, check your answers using a calculator.</li>
+                </ul>
+                <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Multiplication.svg"
+                    alt="Hey, check you internet!" class="image">
+                <div class="description-2">Steps to do long multiplication on paper:</div>
+                <ul class="bullets-2">
+                    <li class="bullet">First, write the larger number above the smaller number.</li>
+                    <li class="bullet">Next, multiply the number in the ones place of the bottom number by the number in
+                        the
+                        ones place of the
+                        top number, then the tens place of the top number, and so on.</li>
+                    <li class="bullet">Then, draw a 0 in the ones column below the first product and multiply the number
+                        in the tens place of the bottom number by the number in ones place of the
+                        top number, then the tens place of the top number, and so on.</li>
+                    <li class="bullet">Next, Add the digits of both products.</li>
+                    <li class="bullet">First, write the larger number above the smaller number.</li>
+                </ul>
             </div>
-            <div class="row-2">
-                <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')" />
-                <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')" />
-                <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')" />
-                <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')" />
+            <div class="quiz-1">
+                <div class="heading">Quiz</div>
+                <ul class="questions">
+                    <li class="question">16 x 8 = </li>
+                    <li class="question">279 x 3 = </li>
+                    <li class="question">52 x 19 = </li>
+                    <li class="question">436 x 27 = </li>
+                </ul>
+                <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg"
+                    alt="Hey, check you internet" class="image">
             </div>
-            <div class="row-3">
-                <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')" />
-                <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')" />
-                <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')" />
-                <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')" />
+            <div class="calculator">
+                <div class="display-back">
+                    <input type="text" id="result" class="display" placeholder="0" />
+                </div>
+                <div class="row-1">
+                    <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')" />
+                    <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')" />
+                    <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')" />
+                    <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')" />
+                </div>
+                <div class="row-2">
+                    <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')" />
+                    <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')" />
+                    <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')" />
+                    <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')" />
+                </div>
+                <div class="row-3">
+                    <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')" />
+                    <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')" />
+                    <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')" />
+                    <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')" />
+                </div>
+                <div class="row-4">
+                    <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()" />
+                    <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')" />
+                    <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()" />
+                    <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')" />
+                </div>
             </div>
-            <div class="row-4">
-                <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()" />
-                <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')" />
-                <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()" />
-                <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')" />
+            <div class="steps-2">
+                <div class="heading">Break-apart Method</div>
+                <ul class="bullets">
+                    <li class="bullet">First rewrite your question like this Eg: 26 × 30 = (26 × 3) × 10.</li>
+                    <li class="bullet">Then multiply the number in the brackets.</li>
+                    <li class="bullet">Then multiply the product with number outside of the brackets.</li>
+                </ul>
+            </div>
+            <div class="quiz-2">
+                <div class="heading">Quiz</div>
+                <ul class="questions">
+                    <li class="question">16 x 20 = </li>
+                    <li class="question">27 x 30 = </li>
+                    <li class="question">32 x 40 = </li>
+                    <li class="question">43 x 20 = </li>
+                    <li class="question">36 x 50 = </li>
+                    <li class="question">53 x 70 = </li>
+                </ul>
+                <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg"
+                    alt="Hey, check you internet" class="image">
+            </div>
+            <div class="calculator-2">
+                <div class="display-back">
+                    <input type="text" id="result" class="display" placeholder="0" />
+                </div>
+                <div class="row-1">
+                    <input type="button" class="btn" style="left: 30px;" value="1" onclick="dis('1')" />
+                    <input type="button" class="btn" style="left: 98px;" value="2" onclick="dis('2')" />
+                    <input type="button" class="btn" style="left: 166px;" value="3" onclick="dis('3')" />
+                    <input type="button" class="btn" style="left: 234px;" value="÷" onclick="dis(' / ')" />
+                </div>
+                <div class="row-2">
+                    <input type="button" class="btn" style="left: 30px;" value="4" onclick="dis('4')" />
+                    <input type="button" class="btn" style="left: 98px;" value="5" onclick="dis('5')" />
+                    <input type="button" class="btn" style="left: 166px;" value="6" onclick="dis('6')" />
+                    <input type="button" class="btn" style="left: 234px;" value="-" onclick="dis(' - ')" />
+                </div>
+                <div class="row-3">
+                    <input type="button" class="btn" style="left: 30px;" value="7" onclick="dis('7')" />
+                    <input type="button" class="btn" style="left: 98px;" value="8" onclick="dis('8')" />
+                    <input type="button" class="btn" style="left: 166px;" value="9" onclick="dis('9')" />
+                    <input type="button" class="btn" style="left: 234px;" value="+" onclick="dis(' + ')" />
+                </div>
+                <div class="row-4">
+                    <input type="button" class="btn-ac" style="left: 30px;" value="AC" onclick="clr()" />
+                    <input type="button" class="btn" style="left: 98px;" value="0" onclick="dis('0')" />
+                    <input type="button" class="btn" style="left: 166px;" value="=" onclick="solve()" />
+                    <input type="button" class="btn" style="left: 234px;" value="×" onclick="dis(' * ')" />
+                </div>
+            </div>
+            <div class="steps-2">
+                <div class="heading">Break-apart Method</div>
+                <ul class="bullets">
+                    <li class="bullet">First rewrite your question like this Eg: 26 × 30 = (26 × 3) × 10.</li>
+                    <li class="bullet">Then multiply the number in the brackets.</li>
+                    <li class="bullet">Then multiply the product with number outside of the brackets.</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="heading">Slc</div>
+                <div class="title">Student Led Conference</div>
+                <div class="description">Math and ICT</div>
+                <div class="made-by">Made by : S.O.Maghimma & Vajraaditya Vijay - 5C</div>
+                <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Calculator-Image.svg"
+                    alt="Hey, check you internet!" class="image">
             </div>
         </div>
-        <div class="footer">
-            <div class="heading">Slc</div>
-            <div class="title">Student Led Conference</div>
-            <div class="description">Math and ICT</div>
-            <div class="made-by">Made by : S.O.Maghimma & Vajraaditya Vijay - 5C</div>
-            <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Calculator-Image.svg"
-                alt="Hey, check you internet!" class="image">
-        </div>
-        <div class="background"></div>
     </body>
-
 </html>
