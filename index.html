@@ -53,7 +53,7 @@
 
             .background {
                 width: 95vw;
-                height: 460vh;
+                height: 523vh;
                 margin: auto;
                 margin-top: 4.5vh;
                 z-index: -9999;
@@ -430,7 +430,7 @@
                 width: 93px;
                 height: 43px;
                 left: 8vw;
-                top: 343vh;
+                top: 363vh;
                 font-family: "Playfair Display";
                 font-style: normal;
                 font-weight: 800;
@@ -440,12 +440,30 @@
                 color: #FFFFFF;
             }
 
-            .quiz-2 .questions {
+            .quiz-2 .description-1 {
+                position: absolute;
+                width: 60vw;
+                height: 64px;
+                left: 8vw;
+                top: 378vh;
+
+                /* Description */
+
+                font-family: 'Print Clearly';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+
+                color: #FFFFFF;
+            }
+
+            .quiz-2 .questions-1 {
                 position: absolute;
                 width: 627px;
                 height: 189px;
                 left: 7vw;
-                top: 355vh;
+                top: 392vh;
                 font-family: "Print Clearly";
                 font-style: normal;
                 font-weight: 400;
@@ -454,23 +472,51 @@
                 color: #FFFFFF;
             }
 
-            .quiz-2 .questions .question {
+            .quiz-2 .questions-1 .question {
                 margin-bottom: 4vh;
             }
 
-            .quiz-2 .image {
+            .quiz-2 .description-2 {
                 position: absolute;
-                width: 339px;
-                height: 337px;
-                left: 28vw;
-                top: 348vh;
+                width: 60vw;
+                height: 64px;
+                left: 8vw;
+                top: 416vh;
+
+                /* Description */
+
+                font-family: 'Print Clearly';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+
+                color: #FFFFFF;
+            }
+
+            .quiz-2 .questions-2 {
+                position: absolute;
+                width: 627px;
+                height: 189px;
+                left: 7vw;
+                top: 425vh;
+                font-family: "Print Clearly";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 27px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+
+            .quiz-2 .questions-2 .question {
+                margin-bottom: 4vh;
             }
 
             .footer {
                 position: absolute;
                 width: 95vw;
                 height: 378px;
-                top: calc(460vh - 378px);
+                top: calc(523vh - 378px);
                 background: #42424F;
                 border-radius: 0px 0px 25px 25px;
             }
@@ -651,45 +697,43 @@
                     } else {
                         stickyDiv.style.position = "absolute";
                         stickyDiv.style.top = "225vh";
-                    } 
-                    
-                    if (window.pageYOffset >= 2450) {
+                    }
+
+                    if (window.pageYOffset >= 2925) {
                         stickyDiv.style.position = "absolute";
-                        stickyDiv.style.top = "340vh";
+                        stickyDiv.style.top = "405vh";
                     }
                 }
 
                 function pos() {
                     console.log(window.pageYOffset);
                 }
+
             </script>
             <div class="steps-2">
                 <div class="heading">Break-apart Method</div>
                 <ul class="bullets">
-                    <li class="bullet">First rewrite your question like this Eg: 26 × 30 = (26 × 3) × 10.</li>
-                    <li class="bullet">Then multiply the number in the brackets.</li>
-                    <li class="bullet">Then multiply the product with number outside of the brackets.</li>
+                    <li class="bullet">Multiplying a number by 20 is the same as multiplying
+                        a number by 2 and then 10.</li>
+                    <li class="bullet">Rewrite your question like this.</li>
+                    <li class="bullet">123 × 20 = (123 × 2) × 10 = </li>
+                    <li class="bullet">Finally, calculate it.</li>
                 </ul>
             </div>
             <div class="quiz-2">
                 <div class="heading">Quiz</div>
-                <ul class="questions">
-                    <li class="question">16 x 20 = </li>
-                    <li class="question">27 x 30 = </li>
-                    <li class="question">32 x 40 = </li>
-                    <li class="question">43 x 20 = </li>
-                    <li class="question">36 x 50 = </li>
-                    <li class="question">53 x 70 = </li>
+                <div class="description-1">You don’t need to do break apart method for these <br>questions:</div>
+                <ul class="questions-1">
+                    <li class="question">800 x 10 = </li>
+                    <li class="question">253 x 100 = </li>
                 </ul>
-                <img src="https://raw.githubusercontent.com/VajraadityaVijay/Grade-5-Slc-1/main/Quiz-Image.svg"
-                    alt="Hey, check you internet" class="image">
-            </div>
-            <div class="steps-2">
-                <div class="heading">Break-apart Method</div>
-                <ul class="bullets">
-                    <li class="bullet">First rewrite your question like this Eg: 26 × 30 = (26 × 3) × 10.</li>
-                    <li class="bullet">Then multiply the number in the brackets.</li>
-                    <li class="bullet">Then multiply the product with number outside of the brackets.</li>
+                <div class="description-2">You need to do break apart method for these questions:</div>
+                <ul class="questions-2">
+                    <li class="question">360 × 30 = </li>
+                    <li class="question">405 × 70 = </li>
+                    <li class="question">723 × 400 = </li>
+                    <li class="question">653 × 800 = </li>
+                    <li class="question">7521 × 600 = </li>
                 </ul>
             </div>
             <div class="footer">
