@@ -658,15 +658,15 @@
                 stickyDiv = document.querySelector(".calculator");
                 stickyPos = stickyDiv.getBoundingClientRect().top + window.pageYOffset;
                 window.onscroll = function () {
-                    if (window.pageYOffset > stickyPos - 160) {
+                    if (window.pageYOffset > stickyPos - 500) {
                         stickyDiv.style.position = "fixed";
                         stickyDiv.style.top = "20vh";
                     } else {
                         stickyDiv.style.position = "absolute";
-                        stickyDiv.style.top = "225vh";
+                        stickyDiv.style.top = "180vh";
                     }
 
-                    if (window.pageYOffset >= 2925) {
+                    if (window.pageYOffset >= 2920) {
                         stickyDiv.style.position = "absolute";
                         stickyDiv.style.top = "405vh";
                     }
